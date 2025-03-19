@@ -1,0 +1,19 @@
+.cart-item {
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  direction: rtl;
+  text-align: right;
+}
+
+.remove-button {
+  background: none;
+  color: black;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  margin-right: 10px;
+}
