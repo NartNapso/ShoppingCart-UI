@@ -1,9 +1,9 @@
 import { CartItem } from "../features/cart/cartTypes";
 
-const API_URL = "http://localhost:5178/api/cart";
+const API_URL = "https://shoppingcartapiapp.azurewebsites.net/api/cart";
 
 export async function getCart() {
-  const response = await fetch("http://localhost:5178/api/cart");
+  const response = await fetch(API_URL);
 
   if (!response.ok) {
     console.error("❌ API Error:", response.status, response.statusText);
@@ -16,7 +16,7 @@ export async function getCart() {
 
 
 export async function addToCart(item: CartItem) {
-  const response = await fetch("http://localhost:5178/api/cart", {
+  const response = await fetch(API_URL, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
