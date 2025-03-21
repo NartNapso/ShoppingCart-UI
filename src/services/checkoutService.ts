@@ -1,5 +1,5 @@
-const CHECKOUT_API_URL = "http://localhost:5000/api/checkout";
-const CART_API_URL = "http://localhost:5178/api/cart";
+const CHECKOUT_API_URL = "http://shoppingcartnodeapi-gqa5d0gkbthzh3gm.westeurope-01.azurewebsites.net/api/checkout";
+const CART_API_URL = "https://shoppingcartapiapp.azurewebsites.net/api/cart";
 
 export interface CheckoutData {
   fullName: string;
