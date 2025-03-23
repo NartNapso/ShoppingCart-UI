@@ -61,6 +61,7 @@ const AddProductForm: React.FC = () => {
             value={quantity}
             onChange={(e) => setQuantity(parseInt(e.target.value))}
             min="1"
+            className={category ? "" : "disabled-input"}
           />
         </div>
 
